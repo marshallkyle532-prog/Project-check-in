@@ -3,218 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GameHub | Favorite Games</title>
+    <title>Progress Check-In</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <nav class="navbar" aria-label="Main navigation">
-        <a href="#" class="brand">GameHub</a>
+        <a href="#" class="brand">Progress Check-In</a>
         <ul class="nav-links">
-          <li><a href="#featured">Featured</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#top-rated">Top Rated</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#updates">Updates</a></li>
+          <li><a href="#team">Team</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero" id="overview" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Favorite Games</p>
-          <h1 id="hero-title">Find your next obsession.</h1>
+          <p class="eyebrow">A simple way to stay in sync</p>
+          <h1 id="hero-title">Quick updates. Clear progress. Less confusion.</h1>
           <p>
-            Discover standout games across RPGs, adventure titles, strategy hits, and
-            co-op favorites. Read ratings, browse screenshots, and compare the games
-            worth your time.
+            Check in with your team, share what’s moving, what’s stuck, and what needs a hand.
+            No big meetings. No complicated process. Just honest updates that help everyone move forward.
           </p>
           <div class="btn-row">
-            <a href="#featured" class="btn btn-primary">Browse games</a>
-            <a href="#top-rated" class="btn btn-secondary">Top rated</a>
+            <a href="#updates" class="btn btn-primary">See updates</a>
+            <a href="#team" class="btn btn-secondary">Meet the team</a>
           </div>
         </div>
 
-        <aside class="hero-panel" aria-label="Top games snapshot">
-          <div class="spotlight-card">
-            <p class="label">This week</p>
-            <h2>Hades II</h2>
-            <div class="stars" aria-label="Rating 4.8 out of 5">★★★★★</div>
-            <p>Fast-paced combat, sharp storytelling, and rich dungeon exploration.</p>
+        <aside class="hero-panel" aria-label="Check-in summary">
+          <div class="status-card">
+            <div class="status-header">
+              <span>Team progress</span>
+              <span class="pill good">On track</span>
+            </div>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" style="width: 76%"></div>
+            </div>
           </div>
 
-          <div class="mini-list">
-            <div>
-              <span>Best score</span>
-              <strong>4.9</strong>
+          <div class="mini-grid">
+            <div class="mini-box">
+              <strong>8</strong>
+              <span>Tasks done</span>
             </div>
-            <div>
-              <span>New drops</span>
-              <strong>12</strong>
+            <div class="mini-box">
+              <strong>4</strong>
+              <span>In progress</span>
             </div>
-            <div>
-              <span>Editors' pick</span>
-              <strong>9</strong>
+            <div class="mini-box">
+              <strong>2</strong>
+              <span>Need help</span>
             </div>
           </div>
         </aside>
       </section>
 
-      <section id="featured" aria-labelledby="featured-title">
+      <section id="updates" aria-labelledby="updates-title">
         <div class="section-header">
-          <h2 id="featured-title">Featured games</h2>
-          <p>Popular picks from our readers and editors.</p>
+          <h2 id="updates-title">Today’s check-ins</h2>
+          <p>Small updates, steady progress.</p>
         </div>
 
-        <div class="game-grid">
-          <article class="game-card">
-            <img
-              src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80"
-              alt="Screenshot from an action game"
-            />
-            <div class="game-body">
-              <div class="game-meta">
-                <span class="tag">Action RPG</span>
-                <span class="score">4.9</span>
-              </div>
-              <h3>Elden Ring</h3>
-              <p>
-                Explore a vast fantasy world full of secrets, challenging combat,
-                and unforgettable boss fights.
-              </p>
-            </div>
+        <div class="card-grid">
+          <article class="info-card">
+            <p class="card-label">Sam</p>
+            <h3>Website refresh</h3>
+            <p>Finished the homepage layout and uploaded the first draft for review.</p>
+            <span class="meta">Status: Almost done</span>
           </article>
 
-          <article class="game-card">
-            <img
-              src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80"
-              alt="Screenshot from a fantasy adventure game"
-            />
-            <div class="game-body">
-              <div class="game-meta">
-                <span class="tag">Adventure</span>
-                <span class="score">4.8</span>
-              </div>
-              <h3>Zelda: Tears of the Kingdom</h3>
-              <p>
-                Puzzle your way through a sprawling open world with inventive tools,
-                vertical exploration, and beautiful scenery.
-              </p>
-            </div>
+          <article class="info-card">
+            <p class="card-label">Maya</p>
+            <h3>Client onboarding</h3>
+            <p>Still waiting on final signup details, but the onboarding doc is ready to go.</p>
+            <span class="meta">Status: Needs one more thing</span>
           </article>
 
-          <article class="game-card">
-            <img
-              src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80"
-              alt="Screenshot from a strategic game"
-            />
-            <div class="game-body">
-              <div class="game-meta">
-                <span class="tag">Strategy</span>
-                <span class="score">4.7</span>
-              </div>
-              <h3>Factorio</h3>
-              <p>
-                Build, automate, and expand a factory from the ground up while managing
-                logistics and survival systems.
-              </p>
-            </div>
+          <article class="info-card">
+            <p class="card-label">Leo</p>
+            <h3>Bug fixes</h3>
+            <p>Two small issues are fixed, and the last QA pass is running now.</p>
+            <span class="meta">Status: Looking good</span>
           </article>
         </div>
       </section>
 
-      <section id="reviews" aria-labelledby="reviews-title">
-        <div class="section-header">
-          <h2 id="reviews-title">Top reviews</h2>
-        </div>
-
-        <div class="review-grid">
-          <article class="review-card">
-            <h3>Stardew Valley</h3>
-            <p class="stars" aria-label="Rating 4.8 out of 5">★★★★★</p>
-            <p>
-              A relaxing farming sim with personality, charm, and enough systems to stay
-              engaging for hours.
-            </p>
-          </article>
-
-          <article class="review-card">
-            <h3>Persona 5 Royal</h3>
-            <p class="stars" aria-label="Rating 4.9 out of 5">★★★★★</p>
-            <p>
-              Stylish, emotional, and packed with memorable character moments, turn-based battles,
-              and a gorgeous soundtrack.
-            </p>
-          </article>
-
-          <article class="review-card">
-            <h3>Celeste</h3>
-            <p class="stars" aria-label="Rating 4.8 out of 5">★★★★★</p>
-            <p>
-              A platformer that balances difficulty and emotional storytelling with precise controls and rewarding progression.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="top-rated" aria-labelledby="top-rated-title">
-        <div class="section-header">
-          <h2 id="top-rated-title">Top rated this month</h2>
-        </div>
-
-        <div class="ranking-list">
-          <div class="ranking-item">
-            <span class="rank">01</span>
-            <div>
-              <h3>Hades II</h3>
-              <p>4.9 rating · Roguelike · Action</p>
-            </div>
-          </div>
-          <div class="ranking-item">
-            <span class="rank">02</span>
-            <div>
-              <h3>Balatro</h3>
-              <p>4.8 rating · Card game · Strategy</p>
-            </div>
-          </div>
-          <div class="ranking-item">
-            <span class="rank">03</span>
-            <div>
-              <h3>Baldur's Gate 3</h3>
-              <p>4.9 rating · RPG · Story-rich</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="about" aria-labelledby="about-title">
+      <section class="about" aria-labelledby="about-title">
         <div class="about-copy">
-          <h2 id="about-title">A place for game lovers.</h2>
+          <h2 id="about-title">Built for real team life.</h2>
           <p>
-            GameHub brings together ratings, screenshots, and quick reviews to help players
-            pick the best games for their mood, platform, and play style.
+            Progress Check-In keeps things simple. It gives teams a place to say what moved,
+            what is stuck, and what is next without turning every update into a long meeting.
           </p>
           <p>
-            Whether you want something relaxing, high-stakes, or totally story-driven,
-            we cover the games worth your attention.
+            It is made for everyday work—friendly, readable, and easy to check in on during a busy week.
           </p>
         </div>
 
-        <ul class="feature-list" aria-label="GameHub features">
-          <li>Curated game recommendations</li>
-          <li>Ratings and detailed reviews</li>
-          <li>Game screenshots and highlights</li>
-          <li>Fresh picks across genres</li>
+        <ul class="check-list">
+          <li>Quick updates from the whole team</li>
+          <li>Easy to see what needs attention</li>
+          <li>Friendly, lightweight project tracking</li>
+          <li>Simple communication with less stress</li>
         </ul>
+      </section>
+
+      <section id="team" aria-labelledby="team-title">
+        <div class="section-header">
+          <h2 id="team-title">The crew</h2>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="avatar">S</div>
+            <h3>Sam</h3>
+            <p>Design</p>
+          </article>
+
+          <article class="team-card">
+            <div class="avatar">M</div>
+            <h3>Maya</h3>
+            <p>Operations</p>
+          </article>
+
+          <article class="team-card">
+            <div class="avatar">L</div>
+            <h3>Leo</h3>
+            <p>Development</p>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer>
       <div class="footer-wrap">
-        <p>© 2024 GameHub</p>
+        <p>© 2024 Progress Check-In</p>
         <div class="footer-links">
-          <a href="#">Reviews</a>
-          <a href="#">Top games</a>
+          <a href="#">Updates</a>
+          <a href="#">Team</a>
           <a href="#">Contact</a>
         </div>
       </div>
