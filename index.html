@@ -1,129 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Check-in</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        
-        .container {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            max-width: 600px;
-            width: 100%;
-        }
-        
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        p {
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        
-        .features {
-            list-style: none;
-            margin-bottom: 30px;
-        }
-        
-        .features li {
-            padding: 12px 0;
-            color: #555;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            align-items: center;
-        }
-        
-        .features li:before {
-            content: "✓";
-            color: #667eea;
-            font-weight: bold;
-            margin-right: 12px;
-            font-size: 18px;
-        }
-        
-        .features li:last-child {
-            border-bottom: none;
-        }
-        
-        .buttons {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        button {
-            padding: 12px 24px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 600;
-        }
-        
-        .btn-primary {
-            background: #667eea;
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            background: #5568d3;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
-        
-        .btn-secondary {
-            background: #f0f0f0;
-            color: #333;
-        }
-        
-        .btn-secondary:hover {
-            background: #e0e0e0;
-            transform: translateY(-2px);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>🎯 Project Check-in</h1>
-        <p>Welcome to Project Check-in! Stay on top of your project progress and team updates.</p>
-        
-        <ul class="features">
-            <li>Real-time project tracking</li>
-            <li>Team collaboration tools</li>
-            <li>Progress monitoring</li>
-            <li>Status updates and reports</li>
-            <li>Integrated communication</li>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="#" class="brand">Project Check-in</a>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
         </ul>
-        
-        <div class="buttons">
-            <button class="btn-primary">Get Started</button>
-            <button class="btn-secondary">Learn More</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Keep project work visible and on track.</h1>
+          <p>
+            Project Check-in helps teams share progress, spot blockers early,
+            and keep delivery moving with clear weekly updates and team visibility.
+          </p>
+          <div class="btn-row">
+            <a href="#about" class="btn btn-primary">Learn more</a>
+            <a href="#features" class="btn btn-secondary">View features</a>
+          </div>
         </div>
-    </div>
-</body>
+
+        <aside class="hero-panel" aria-label="Project status summary">
+          <div class="status-card">
+            <div class="status-label">
+              <span>Website launch</span>
+              <span class="pill pill-success">On track</span>
+            </div>
+            <div class="progress" aria-label="Website launch progress">
+              <div class="progress-bar" style="width: 78%;"></div>
+            </div>
+          </div>
+
+          <div class="status-card">
+            <div class="status-label">
+              <span>Client onboarding</span>
+              <span class="pill pill-warning">Needs review</span>
+            </div>
+            <div class="progress" aria-label="Client onboarding progress">
+              <div class="progress-bar" style="width: 56%;"></div>
+            </div>
+          </div>
+
+          <div class="metric-row">
+            <div class="metric">
+              <strong>24</strong>
+              <span>Tasks</span>
+            </div>
+            <div class="metric">
+              <strong>11</strong>
+              <span>Completed</span>
+            </div>
+            <div class="metric">
+              <strong>3</strong>
+              <span>Blocked</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="features" aria-labelledby="features-title">
+        <div class="section-header">
+          <h2 id="features-title">Why teams use Project Check-in</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">📊</div>
+            <h3>Weekly status updates</h3>
+            <p>
+              Keep everyone aligned with concise project updates, priorities, and progress snapshots.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">✅</div>
+            <h3>Clear task ownership</h3>
+            <p>
+              Assign responsibilities, monitor deadlines, and quickly identify what needs attention.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🚧</div>
+            <h3>Blocker visibility</h3>
+            <p>
+              Surface dependencies and risks early so project teams can resolve issues before they escalate.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="about-copy">
+          <h2 id="about-title">Built for project teams.</h2>
+          <p>
+            Project Check-in is designed for teams that need a consistent way to report progress,
+            track delivery, and communicate project health without heavy process overhead.
+          </p>
+          <p>
+            From internal product work to client delivery, it gives leaders a simple view of what is moving,
+            what is delayed, and what needs follow-up.
+          </p>
+        </div>
+
+        <ul class="highlight-list" aria-label="Key benefits">
+          <li>Shared project visibility across the whole team</li>
+          <li>Faster status reporting for managers and stakeholders</li>
+          <li>Cleaner communication around deadlines and blockers</li>
+          <li>Better alignment between product, design, and delivery</li>
+        </ul>
+      </section>
+
+      <section id="team" aria-labelledby="team-title">
+        <div class="section-header">
+          <h2 id="team-title">Meet the team</h2>
+        </div>
+
+        <div class="team-grid">
+          <article class="member-card">
+            <div class="member-avatar" aria-hidden="true">MK</div>
+            <h3>Marshall Kyle</h3>
+            <div class="member-role">Founder</div>
+            <p>Leads product direction and keeps the team focused on practical project outcomes.</p>
+          </article>
+
+          <article class="member-card">
+            <div class="member-avatar" aria-hidden="true">AL</div>
+            <h3>Alicia Lee</h3>
+            <div class="member-role">Project Lead</div>
+            <p>Coordinates delivery priorities and keeps cross-functional teams aligned.</p>
+          </article>
+
+          <article class="member-card">
+            <div class="member-avatar" aria-hidden="true">RT</div>
+            <h3>Rafael Torres</h3>
+            <div class="member-role">Operations</div>
+            <p>Improves team workflows and makes reporting timely, clear, and useful.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-wrap">
+        <p>© 2024 Project Check-in</p>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
