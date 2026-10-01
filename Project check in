@@ -1,0 +1,163 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHub | Favorite Games</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#" class="brand">GameHub</a>
+      <ul class="nav-links">
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#top-rated">Top Rated</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Favorite Games</p>
+        <h1 id="hero-title">Find your next obsession.</h1>
+        <p>Discover standout games across RPGs, adventure titles, strategy hits, and co-op favorites.</p>
+        <div class="btn-row">
+          <a href="#featured" class="btn btn-primary">Browse games</a>
+          <a href="#top-rated" class="btn btn-secondary">Top rated</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="Top games snapshot">
+        <div class="spotlight-card">
+          <p class="label">This week</p>
+          <h2>Hades II</h2>
+          <div class="stars" aria-label="Rating 4.8 out of 5">★★★★★</div>
+          <p>Fast-paced combat, sharp storytelling, and rich dungeon exploration.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="featured" aria-labelledby="featured-title">
+      <div class="section-header">
+        <h2 id="featured-title">Featured Games</h2>
+      </div>
+
+      <div class="game-grid">
+        <article class="game-card">
+          <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80" alt="Elden Ring screenshot" />
+          <div class="game-body">
+            <div class="game-meta">
+              <span class="tag">Action RPG</span>
+              <span class="score">4.9</span>
+            </div>
+            <h3>Elden Ring</h3>
+            <p>Explore a vast fantasy world full of secrets and boss fights.</p>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80" alt="Zelda screenshot" />
+          <div class="game-body">
+            <div class="game-meta">
+              <span class="tag">Adventure</span>
+              <span class="score">4.8</span>
+            </div>
+            <h3>Zelda: Tears of the Kingdom</h3>
+            <p>Puzzle your way through a sprawling open world with inventive tools.</p>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80" alt="Factorio screenshot" />
+          <div class="game-body">
+            <div class="game-meta">
+              <span class="tag">Strategy</span>
+              <span class="score">4.7</span>
+            </div>
+            <h3>Factorio</h3>
+            <p>Build, automate, and expand a factory from the ground up.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-title">
+      <div class="section-header">
+        <h2 id="reviews-title">Top Reviews</h2>
+      </div>
+
+      <div class="review-grid">
+        <article class="review-card">
+          <h3>Stardew Valley</h3>
+          <p class="stars" aria-label="Rating 4.8 out of 5">★★★★★</p>
+          <p>A relaxing farming sim with personality and charm.</p>
+        </article>
+
+        <article class="review-card">
+          <h3>Persona 5 Royal</h3>
+          <p class="stars" aria-label="Rating 4.9 out of 5">★★★★★</p>
+          <p>Stylish, emotional, and packed with memorable moments.</p>
+        </article>
+
+        <article class="review-card">
+          <h3>Celeste</h3>
+          <p class="stars" aria-label="Rating 4.8 out of 5">★★★★★</p>
+          <p>A platformer that balances difficulty and storytelling.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="top-rated" aria-labelledby="top-rated-title">
+      <div class="section-header">
+        <h2 id="top-rated-title">Top Rated This Month</h2>
+      </div>
+
+      <div class="ranking-list">
+        <div class="ranking-item">
+          <span class="rank">01</span>
+          <div>
+            <h3>Hades II</h3>
+            <p>4.9 rating · Roguelike · Action</p>
+          </div>
+        </div>
+        <div class="ranking-item">
+          <span class="rank">02</span>
+          <div>
+            <h3>Balatro</h3>
+            <p>4.8 rating · Card game · Strategy</p>
+          </div>
+        </div>
+        <div class="ranking-item">
+          <span class="rank">03</span>
+          <div>
+            <h3>Baldur's Gate 3</h3>
+            <p>4.9 rating · RPG · Story-rich</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <div class="about-copy">
+        <h2 id="about-title">A Place for Game Lovers</h2>
+        <p>GameHub brings together ratings, screenshots, and reviews to help players find their next favorite game.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-wrap">
+      <p>© 2024 GameHub</p>
+      <div class="footer-links">
+        <a href="#featured">Featured</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#top-rated">Top Games</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
